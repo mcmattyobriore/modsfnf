@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="frisk.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down frisk0000" x="2" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0001" x="2" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0002" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0003" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0004" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0005" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0006" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0007" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0008" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0009" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0010" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0011" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0012" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="down frisk0013" x="589" y="2" width="585" height="924"/>
+	<SubTexture name="idlefrisk0000" x="1176" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0001" x="1176" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0002" x="1756" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0003" x="1756" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0004" x="2336" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0005" x="2336" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0006" x="2916" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0007" x="2916" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0008" x="3496" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0009" x="3496" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0010" x="3496" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0011" x="3496" y="2" width="578" height="944"/>
+	<SubTexture name="idlefrisk0012" x="2" y="948" width="578" height="944"/>
+	<SubTexture name="idlefrisk0013" x="2" y="948" width="578" height="944"/>
+	<SubTexture name="left frisk0000" x="582" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0001" x="582" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0002" x="1174" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0003" x="1174" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0004" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0005" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0006" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0007" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0008" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0009" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0010" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0011" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0012" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="left frisk0013" x="1766" y="948" width="590" height="935"/>
+	<SubTexture name="right frisk0000" x="2358" y="948" width="589" height="936"/>
+	<SubTexture name="right frisk0001" x="2358" y="948" width="589" height="936"/>
+	<SubTexture name="right frisk0002" x="2949" y="948" width="589" height="936"/>
+	<SubTexture name="right frisk0003" x="2949" y="948" width="589" height="936"/>
+	<SubTexture name="right frisk0004" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="right frisk0005" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="right frisk0006" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="right frisk0007" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="right frisk0008" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="right frisk0009" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="right frisk0010" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="right frisk0011" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="right frisk0012" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="right frisk0013" x="2" y="1894" width="589" height="936"/>
+	<SubTexture name="up frisk0000" x="593" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0001" x="593" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0002" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0003" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0004" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0005" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0006" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0007" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0008" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0009" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0010" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0011" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0012" x="1172" y="1894" width="577" height="971"/>
+	<SubTexture name="up frisk0013" x="1172" y="1894" width="577" height="971"/>
+</TextureAtlas>

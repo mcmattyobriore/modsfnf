@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gfwood.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gfonwood0000" x="2" y="2" width="593" height="565"/>
+	<SubTexture name="gfonwood0001" x="2" y="2" width="593" height="565"/>
+	<SubTexture name="gfonwood0002" x="2" y="2" width="593" height="565"/>
+	<SubTexture name="gfonwood0003" x="2" y="2" width="593" height="565"/>
+	<SubTexture name="gfonwood0004" x="597" y="2" width="593" height="565"/>
+	<SubTexture name="gfonwood0005" x="597" y="2" width="593" height="565"/>
+	<SubTexture name="gfonwood0006" x="597" y="2" width="593" height="565"/>
+	<SubTexture name="gfonwood0007" x="597" y="2" width="593" height="565"/>
+</TextureAtlas>

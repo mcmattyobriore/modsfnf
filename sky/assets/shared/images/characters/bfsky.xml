@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bfsky.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bfdown0000" x="2" y="2" width="290" height="374"/>
+	<SubTexture name="bfdown0001" x="2" y="2" width="290" height="374"/>
+	<SubTexture name="bfdown0002" x="294" y="2" width="290" height="374"/>
+	<SubTexture name="bfdown0003" x="294" y="2" width="290" height="374"/>
+	<SubTexture name="bfidle0000" x="586" y="2" width="269" height="411"/>
+	<SubTexture name="bfidle0001" x="586" y="2" width="269" height="411"/>
+	<SubTexture name="bfidle0002" x="586" y="2" width="269" height="411"/>
+	<SubTexture name="bfidle0003" x="586" y="2" width="269" height="411"/>
+	<SubTexture name="bfidle0004" x="857" y="2" width="269" height="411"/>
+	<SubTexture name="bfidle0005" x="857" y="2" width="269" height="411"/>
+	<SubTexture name="bfidle0006" x="857" y="2" width="269" height="411"/>
+	<SubTexture name="bfidle0007" x="857" y="2" width="269" height="411"/>
+	<SubTexture name="bfleft0000" x="1128" y="2" width="299" height="412"/>
+	<SubTexture name="bfleft0001" x="1128" y="2" width="299" height="412"/>
+	<SubTexture name="bfleft0002" x="1429" y="2" width="299" height="412"/>
+	<SubTexture name="bfleft0003" x="1429" y="2" width="299" height="412"/>
+	<SubTexture name="bfright0000" x="2" y="416" width="323" height="389"/>
+	<SubTexture name="bfright0001" x="2" y="416" width="323" height="389"/>
+	<SubTexture name="bfright0002" x="327" y="416" width="323" height="389"/>
+	<SubTexture name="bfright0003" x="327" y="416" width="323" height="389"/>
+	<SubTexture name="bfup0000" x="652" y="416" width="272" height="445"/>
+	<SubTexture name="bfup0001" x="652" y="416" width="272" height="445"/>
+	<SubTexture name="bfup0002" x="926" y="416" width="272" height="445"/>
+	<SubTexture name="bfup0003" x="926" y="416" width="272" height="445"/>
+</TextureAtlas>

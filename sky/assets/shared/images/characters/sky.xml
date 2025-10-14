@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sky.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SKYIDLE0000" x="2" y="2" width="359" height="548"/>
+	<SubTexture name="SKYIDLE0001" x="2" y="2" width="359" height="548"/>
+	<SubTexture name="SKYIDLE0002" x="2" y="2" width="359" height="548"/>
+	<SubTexture name="SKYIDLE0003" x="2" y="2" width="359" height="548"/>
+	<SubTexture name="SKYIDLE0004" x="363" y="2" width="359" height="548"/>
+	<SubTexture name="SKYIDLE0005" x="363" y="2" width="359" height="548"/>
+	<SubTexture name="SKYIDLE0006" x="363" y="2" width="359" height="548"/>
+	<SubTexture name="SKYIDLE0007" x="363" y="2" width="359" height="548"/>
+	<SubTexture name="skydown0000" x="724" y="2" width="379" height="498"/>
+	<SubTexture name="skydown0001" x="724" y="2" width="379" height="498"/>
+	<SubTexture name="skydown0002" x="1105" y="2" width="379" height="498"/>
+	<SubTexture name="skydown0003" x="1105" y="2" width="379" height="498"/>
+	<SubTexture name="skyleft0000" x="1486" y="2" width="412" height="494"/>
+	<SubTexture name="skyleft0001" x="1486" y="2" width="412" height="494"/>
+	<SubTexture name="skyleft0002" x="2" y="552" width="412" height="494"/>
+	<SubTexture name="skyleft0003" x="2" y="552" width="412" height="494"/>
+	<SubTexture name="skyright0000" x="416" y="552" width="430" height="533"/>
+	<SubTexture name="skyright0001" x="416" y="552" width="430" height="533"/>
+	<SubTexture name="skyright0002" x="848" y="552" width="430" height="533"/>
+	<SubTexture name="skyright0003" x="848" y="552" width="430" height="533"/>
+	<SubTexture name="skyup0000" x="1280" y="552" width="387" height="595"/>
+	<SubTexture name="skyup0001" x="1280" y="552" width="387" height="595"/>
+	<SubTexture name="skyup0002" x="2" y="1149" width="387" height="595"/>
+	<SubTexture name="skyup0003" x="2" y="1149" width="387" height="595"/>
+</TextureAtlas>

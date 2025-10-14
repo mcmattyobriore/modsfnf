@@ -1,0 +1,93 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft",
+			"indices": [
+				1
+			],
+			"name": "bfidle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
+			"indices": [
+				5
+			],
+			"name": "bfidle"
+		},
+		{
+			"offsets": [
+				28,
+				-35
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "bfdown"
+		},
+		{
+			"offsets": [
+				-17,
+				-4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "bfright"
+		},
+		{
+			"offsets": [
+				29,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "bfleft"
+		},
+		{
+			"offsets": [
+				6,
+				37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "bfup"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfsky",
+	"position": [
+		200,
+		312
+	],
+	"healthicon": "bfsky",
+	"flip_x": true,
+	"healthbar_colors": [
+		114,
+		48,
+		249
+	],
+	"camera_position": [
+		-100,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
