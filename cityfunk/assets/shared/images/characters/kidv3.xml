@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="kidv3.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="kid0000" x="15" y="15" width="313" height="361"/>
+	<SubTexture name="kid0001" x="343" y="15" width="313" height="361"/>
+	<SubTexture name="kid0002" x="343" y="15" width="313" height="361"/>
+	<SubTexture name="kid0003" x="671" y="15" width="313" height="361"/>
+	<SubTexture name="kid0004" x="671" y="15" width="313" height="361"/>
+	<SubTexture name="kid0005" x="999" y="15" width="313" height="361"/>
+	<SubTexture name="kid0006" x="999" y="15" width="313" height="361"/>
+	<SubTexture name="kid0007" x="1327" y="15" width="313" height="361"/>
+	<SubTexture name="kid0008" x="1327" y="15" width="313" height="361"/>
+	<SubTexture name="kid0009" x="1655" y="15" width="313" height="361"/>
+	<SubTexture name="kid0010" x="1655" y="15" width="313" height="361"/>
+	<SubTexture name="kid0011" x="1655" y="15" width="313" height="361"/>
+	<SubTexture name="kid0012" x="1655" y="15" width="313" height="361"/>
+	<SubTexture name="kid0013" x="1655" y="15" width="313" height="361"/>
+	<SubTexture name="kid0014" x="15" y="391" width="313" height="361"/>
+	<SubTexture name="kid0015" x="343" y="391" width="313" height="361"/>
+	<SubTexture name="kid0016" x="343" y="391" width="313" height="361"/>
+	<SubTexture name="kid0017" x="671" y="391" width="313" height="361"/>
+	<SubTexture name="kid0018" x="671" y="391" width="313" height="361"/>
+	<SubTexture name="kid0019" x="999" y="391" width="313" height="361"/>
+	<SubTexture name="kid0020" x="999" y="391" width="313" height="361"/>
+	<SubTexture name="kid0021" x="1327" y="391" width="313" height="361"/>
+	<SubTexture name="kid0022" x="1327" y="391" width="313" height="361"/>
+	<SubTexture name="kid0023" x="1655" y="15" width="313" height="361"/>
+	<SubTexture name="kid0024" x="1655" y="15" width="313" height="361"/>
+	<SubTexture name="kid0025" x="1655" y="15" width="313" height="361"/>
+	<SubTexture name="kid0026" x="1655" y="15" width="313" height="361"/>
+	<SubTexture name="kid0027" x="1655" y="15" width="313" height="361"/>
+</TextureAtlas>
