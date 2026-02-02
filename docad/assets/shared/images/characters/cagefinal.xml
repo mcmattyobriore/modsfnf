@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cagefinal.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="194" height="338"/>
+	<SubTexture name="down0001" x="0" y="0" width="194" height="338"/>
+	<SubTexture name="down0002" x="194" y="0" width="194" height="338"/>
+	<SubTexture name="idle0000" x="388" y="0" width="194" height="338"/>
+	<SubTexture name="left0000" x="582" y="0" width="194" height="338"/>
+	<SubTexture name="left0001" x="582" y="0" width="194" height="338"/>
+	<SubTexture name="left0002" x="776" y="0" width="194" height="338"/>
+	<SubTexture name="right0000" x="0" y="338" width="194" height="338"/>
+	<SubTexture name="right0001" x="0" y="338" width="194" height="338"/>
+	<SubTexture name="right0002" x="194" y="338" width="194" height="338"/>
+	<SubTexture name="up0000" x="388" y="338" width="194" height="338"/>
+	<SubTexture name="up0001" x="388" y="338" width="194" height="338"/>
+	<SubTexture name="up0002" x="582" y="338" width="194" height="338"/>
+</TextureAtlas>

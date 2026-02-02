@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="safi.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="538" height="610"/>
+	<SubTexture name="down0001" x="0" y="0" width="538" height="610"/>
+	<SubTexture name="down0002" x="538" y="0" width="538" height="610"/>
+	<SubTexture name="idle0000" x="1076" y="0" width="538" height="610"/>
+	<SubTexture name="left0000" x="0" y="610" width="538" height="610"/>
+	<SubTexture name="left0001" x="0" y="610" width="538" height="610"/>
+	<SubTexture name="left0002" x="538" y="610" width="538" height="610"/>
+	<SubTexture name="right0000" x="1076" y="610" width="538" height="610"/>
+	<SubTexture name="right0001" x="1076" y="610" width="538" height="610"/>
+	<SubTexture name="right0002" x="0" y="1220" width="538" height="610"/>
+	<SubTexture name="up0000" x="538" y="1220" width="538" height="610"/>
+	<SubTexture name="up0001" x="538" y="1220" width="538" height="610"/>
+	<SubTexture name="up0002" x="1076" y="1220" width="538" height="610"/>
+</TextureAtlas>

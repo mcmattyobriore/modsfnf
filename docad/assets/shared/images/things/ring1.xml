@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ring1.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ring0000" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0001" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0002" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0003" x="0" y="143" width="444" height="143"/>
+	<SubTexture name="ring0004" x="0" y="143" width="444" height="143"/>
+	<SubTexture name="ring0005" x="0" y="143" width="444" height="143"/>
+	<SubTexture name="ring0006" x="0" y="286" width="444" height="143"/>
+	<SubTexture name="ring0007" x="0" y="286" width="444" height="143"/>
+	<SubTexture name="ring0008" x="0" y="286" width="444" height="143"/>
+	<SubTexture name="ring0009" x="0" y="429" width="444" height="143"/>
+	<SubTexture name="ring0010" x="0" y="429" width="444" height="143"/>
+	<SubTexture name="ring0011" x="0" y="429" width="444" height="143"/>
+	<SubTexture name="ring0012" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0013" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0014" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0015" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0016" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0017" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0018" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0019" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0020" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0021" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0022" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0023" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0024" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0025" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0026" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0027" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0028" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0029" x="0" y="572" width="444" height="143"/>
+	<SubTexture name="ring0030" x="0" y="429" width="444" height="143"/>
+	<SubTexture name="ring0031" x="0" y="429" width="444" height="143"/>
+	<SubTexture name="ring0032" x="0" y="429" width="444" height="143"/>
+	<SubTexture name="ring0033" x="0" y="286" width="444" height="143"/>
+	<SubTexture name="ring0034" x="0" y="286" width="444" height="143"/>
+	<SubTexture name="ring0035" x="0" y="286" width="444" height="143"/>
+	<SubTexture name="ring0036" x="0" y="143" width="444" height="143"/>
+	<SubTexture name="ring0037" x="0" y="143" width="444" height="143"/>
+	<SubTexture name="ring0038" x="0" y="143" width="444" height="143"/>
+	<SubTexture name="ring0039" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0040" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0041" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0042" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0043" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0044" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0045" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0046" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0047" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0048" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0049" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0050" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0051" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0052" x="0" y="0" width="444" height="143"/>
+	<SubTexture name="ring0053" x="0" y="0" width="444" height="143"/>
+</TextureAtlas>
