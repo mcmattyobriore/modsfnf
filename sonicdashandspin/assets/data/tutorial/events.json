@@ -1,0 +1,34 @@
+{
+	"song": {
+		"speed": 1,
+		"stage": "tutorial",
+		"player1": "bf_tutorial",
+		"player2": "gf_t",
+		"player3": null,
+		"events": [
+			[
+				62400,
+				[
+					[
+						"Play Animation",
+						"portal",
+						"bf"
+					],
+					[
+						"Play Animation",
+						"portal",
+						"dad"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 100,
+		"arrowSkin": null,
+		"needsVoices": false,
+		"song": "Tutorial"
+	}
+}
