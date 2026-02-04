@@ -43003,15 +43003,8 @@ $jscomp.polyfill("String.prototype.startsWith", function (ra) {
           return c;
         },
         checkSiteLock: function () {
-          if (!this._urlChecked) {
-            if (this.isHostUrlAllowed()) {
               this._urlChecked = true;
-            } else {
-              this.removeChildren();
-              this.removeEventListener("enterFrame", l(this, this.onEnterFrame));
-              this.createSiteLockFailureScreen();
-            }
-          }
+            
         },
         createSiteLockFailureScreen: function () {
           this.addChild(this.createSiteLockFailureBackground(16777215, 15066597));

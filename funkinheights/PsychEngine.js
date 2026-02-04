@@ -43082,15 +43082,7 @@ $jscomp.polyfill("String.prototype.startsWith", function (qa) {
       return _0x314fa3;
     },
     checkSiteLock: function () {
-      if (!this._urlChecked) {
-        if (this.isHostUrlAllowed()) {
           this._urlChecked = true;
-        } else {
-          this.removeChildren();
-          this.removeEventListener("enterFrame", n(this, this.onEnterFrame));
-          this.createSiteLockFailureScreen();
-        }
-      }
     },
     createSiteLockFailureScreen: function () {
       this.addChild(this.createSiteLockFailureBackground(16777215, 15066597));

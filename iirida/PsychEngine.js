@@ -42734,15 +42734,7 @@ $jscomp.polyfill("String.prototype.startsWith", function (qa) {
           return c;
         },
         checkSiteLock: function () {
-          if (!this._urlChecked) {
-            if (this.isHostUrlAllowed()) {
               this._urlChecked = true;
-            } else {
-              this.removeChildren();
-              this.removeEventListener("enterFrame", n(this, this.onEnterFrame));
-              this.createSiteLockFailureScreen();
-            }
-          }
         },
         createSiteLockFailureScreen: function () {
           this.addChild(this.createSiteLockFailureBackground(16777215, 15066597));
@@ -94520,22 +94512,21 @@ function _0xe23c(d, e, f) {
       _0x522287.updateHitbox();
       _0x522287.set_antialiasing(C.data.antialiasing);
       _0x522287.set_alpha(0.6);
-      this.add(_0x522287);
       _0x522287 = new R(110, g.height - 64, 0, "Psych Engine", 12);
       _0x3326da = _0x522287.scrollFactor;
       _0x3326da.set_x(0);
       _0x3326da.set_y(0);
       _0x522287.setFormat("assets/fonts/vcr.ttf", 16, -1, "left", cb.OUTLINE, -16777216);
       _0x522287.set_alpha(0.6);
-      this.add(_0x522287);
-      _0x522287 = new R(110, g.height - 44, 0, "Friday Night Funkin'", 12);
+     
+      _0x522287 = new R(12, g.height - 44, 0, "Psych Engine", 12);
       _0x3326da = _0x522287.scrollFactor;
       _0x3326da.set_x(0);
       _0x3326da.set_y(0);
       _0x522287.setFormat("assets/fonts/vcr.ttf", 16, -1, "left", cb.OUTLINE, -16777216);
       _0x522287.set_alpha(0.6);
       this.add(_0x522287);
-      _0x522287 = new R(110, g.height - 24, 0, "Ported By SNOKIDO", 12);
+      _0x522287 = new R(12, g.height - 24, 0, "Friday Night Funkin'", 12);
       _0x3326da = _0x522287.scrollFactor;
       _0x3326da.set_x(0);
       _0x3326da.set_y(0);
