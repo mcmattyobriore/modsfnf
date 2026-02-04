@@ -1,0 +1,93 @@
+{
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"position": [
+		0,
+		0
+	],
+	"scale": 1,
+	"no_antialiasing": false,
+	"image": "characters/Sky_Menacing",
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 8,
+	"healthicon": "skymanifest",
+	"flip_x": false,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "sky idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				11,
+				12,
+				13
+			],
+			"fps": 24,
+			"anim": "idle-loop",
+			"loop": true,
+			"name": "sky idle"
+		},
+		{
+			"offsets": [
+				-109,
+				30
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "sky right"
+		},
+		{
+			"offsets": [
+				-28,
+				-82
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "sky down"
+		},
+		{
+			"offsets": [
+				36,
+				53
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "sky up"
+		},
+		{
+			"offsets": [
+				166,
+				29
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "sky left"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	
+	"image": "sky",
+	"position": [
+		100,
+		120
+	],
+	"scale": 0.6,
+	"idle_anim": "sky menu idle",
+	"confirm_anim": "sky menu idle"
+}

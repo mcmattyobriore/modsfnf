@@ -1,0 +1,21 @@
+{
+	"songs": [
+		["Sky (pico-mix)", "skyhappy", [165, 0, 77]]
+	],
+
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekBackground": "stage",
+
+	"difficulties": "Hard",
+	"storyName": "",
+	"weekBefore": "tutorial",
+	"weekName": "Tutorial",
+	"startUnlocked": true,
+
+	"hideStoryMode": true,
+	"hideFreeplay": false
+}

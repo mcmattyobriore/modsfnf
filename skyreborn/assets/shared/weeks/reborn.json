@@ -1,0 +1,23 @@
+{
+	"songs": [
+		["Wife Forever", "sky", [165, 0, 77]],
+		["Sky", "skymad", [165, 0, 77]],
+		["Manifest", "skymanifest", [165, 0, 77]]
+	],
+
+	"weekCharacters": [
+		"sky",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "",
+
+	"difficulties": "Hard, Erect, Nightmare",
+	"storyName": "",
+	"weekBefore": "tutorial",
+	"weekName": "Tutorial",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}
