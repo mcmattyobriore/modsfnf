@@ -1,92 +1,123 @@
- __                 /                                  
-/ _   _ |_ |_ .  _                                     
-\__) (- |_ |_ | | )                                    
-                                                       
- __                                                    
-|_   _  _  _  |                                        
-|   |  (- (_| |( \/                                    
-                 /                                     
-                                                       
- _   _     _                                           
-(_) | )   (_|                                          
-                                                       
- __                                                    
-|_   _ .  _|  _        _  .  _  |_  |_       _  _  |_  
-|   |  | (_| (_| \/   | ) | (_) | ) |_   \/ (- (_| | ) 
-                 /          _/           /             
+# FnF-Psych-Engine-0.5.1-HTML
+> [!IMPORTANT]
+> Yeezy Night Funkin' Now Avaliable on Gamebanana! https://gamebanana.com/mods/636667
 
-HEY
-Thanks for downloadin Friday Night FUNKIN'
-If you downloaded this from any other place than ninja-muffin24.itch.io/FUNKIN
-You might be in DANGER!!! 
+![e](https://github.com/mcmattyobriore/empty/blob/main/readme/preview-1.jpeg)
+# YEEZY NIGHT FUNKIN' Created by Ant | eliseo.mol3 DEMO BY Rhap5ody | mcmattyobriore
+## Weeks
+- Snowdin (locked)
+- tutorial (snowdin preweek)
+- the college dropout
+- late registration
+- graduation
+- 808's & heartbreak
+- my beautiful dark twisted fantasy
+- YEEZUS
+- the life of pablo
+- ye
+- jesus is king
+- donda
+- donda 2
+- watch the thrown
+- kids see ghosts
+- vultures 1
+- vultures 2
+- vultures 3
+- bully
 
-The Itch.io release is the only official source for the desktop (PC, Mac, Linux) versions of the game!
-As of right now, the game is FREE! If you paid for it, you got SCAMMED!
+**FREEPLAY CONTAINS ALL SONGS** \
+**MADE WITH NO ENGINES! ATLEAST THIS DEMO XDDD**
+## Contributors:
+ $\color{goldenrod}{\textbf{[Creator]}}$
+- $\color{goldenrod}{\text{Ant | eliseo.mol3}}$
 
-Now that that's out of the way....
-THANKS FOR DOWNLOADIN. 
+ $\color{teal}{\textbf{[Ranked Up]}}$
+- $\color{teal}{\text{R5 | Rhap5ody}}$
+- $\color{teal}{\text{Pheonix | creepermode360}}$
+- $\color{teal}{\text{Spook | spookz 0}}$
+- $\color{teal}{\text{Icey | iceymadethisone}}$
+- $\color{teal}{\text{Ant | eliseo.mol3}}$
+- $\color{teal}{\text{husk | huskd}}$
+- $\color{teal}{\text{Rarts™ | rartsofficial}}$
+- $\color{teal}{\text{ilikechowchows}}$
 
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-    PERMISSIONS XDDDD
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+ $\color{blue}{\textbf{[Charting]}}$
+- $\color{blue}{\text{matrixpart2.}}$
+- $\color{blue}{\text{Peej | yellowrag98}}$
+- $\color{blue}{\text{Jazzy | gazznap}}$
+- $\color{blue}{\text{Gigi ! | joesephchillaxworld}}$
+- $\color{blue}{\text{Ant | eliseo.mol3}}$
+- $\color{blue}{\text{husk | huskd}}$
+- $\color{blue}{\text{siah | stareatswag}}$
+- $\color{blue}{\text{Nico | imsayden n}}$
+- $\color{blue}{\text{Matrix | mattedmatrix}}$
+- $\color{blue}{\text{Personified. | keboii69}}$
+- $\color{blue}{\text{ilikechowchows}}$
 
-Little info, you have FULL PERMISSION to stream, letsplay, meme, shitpost, do WHATEVER you want with the game.
-Use the music in videos you do, use art, ANYTHING. GO CRAZY BRO.
+ $\color{gold}{\textbf{[Artists]}}$
+- $\color{gold}{\text{Matrixpart2}}$
+- $\color{gold}{\text{R5 | rhap5ody | rh5psody}}$
+- $\color{gold}{\text{Phoenix | creepermode360}}$
+- $\color{gold}{\text{BUSAGUN}}$
+- $\color{gold}{\text{spook}}$
+- $\color{gold}{\text{Zavien | mrgoon185}}$
+- $\color{gold}{\text{icey | iceymadethisone}}$
+- $\color{gold}{\text{husk}}$
+- $\color{gold}{\text{Rarts™}}$
+- $\color{gold}{\text{Kromer   | .kromer  }}$
+- $\color{gold}{\text{siah}}$
+- $\color{gold}{\text{Dooduds | doodslr}}$
+- $\color{gold}{\text{goldenalt | therealgoldenalt}}$
+- $\color{gold}{\text{humourous | humour0ous }}$
+- $\color{gold}{\text{Matrix}}$
+- $\color{gold}{\text{KLAW | vp yzy}}$
+- $\color{gold}{\text{NYx | 12.nyx.83}}$
 
-If you do make any sort of video, it would be a bro move if you linked the game and spread the word
+ $\color{orange}{\textbf{[Composer]}}$
+- $\color{orange}{\text{icey}}$
+- $\color{orange}{\text{husk}}$
 
-Play On Newgrounds - https://www.newgrounds.com/portal/view/770371
-Support on Itch.io - https://ninja-muffin24.itch.io/funkin
+ $\color{green}{\textbf{[Coding]}}$
+- $\color{green}{\text{R5 | Rhap5ody | rh5psody}}$
+- $\color{green}{\text{Jazzy | gazznap}}$
+- $\color{green}{\text{Icey | Iceymadethisone}}$
+- $\color{green}{\text{Dooduds | doodslr}}$
 
-If not no biggie we don't fully hate you only kinda no biggie.
+ $\color{hotpink}{\textbf{[Beloved OGs]}}$
+- $\color{hotpink}{\text{Phoenix}}$
+- $\color{hotpink}{\text{BUSAGUN}}$
+- $\color{hotpink}{\text{Spook}}$
+- $\color{hotpink}{\text{Jazzy}}$
+- $\color{hotpink}{\text{Icey}}$
+- $\color{hotpink}{\text{Ant}}$
+- $\color{hotpink}{\text{Husk}}$
+- $\color{hotpink}{\text{Siah}}$
+- $\color{hotpink}{\text{Golden}}$
+- $\color{hotpink}{\text{NYX}}$
 
+ $\color{purple}{\textbf{[DEMO CONTRIBUTORS]}}$
+- $\color{purple}{\text{mattedmatrix / matrixpart2}}$
+- $\color{purple}{\text{rh5psody}}$
+- $\color{purple}{\text{yellowrag98}}$
+- $\color{purple}{\text{creepermode360}}$
+- $\color{purple}{\text{busagun}}$
+- $\color{purple}{\text{spookz 0}}$
+- $\color{purple}{\text{gazznap}}$
+- $\color{purple}{\text{mrgoon185}}$
+- $\color{purple}{\text{iceymadethisone}}$
+- $\color{purple}{\text{joesephchillaxworld}}$
+- $\color{purple}{\text{eliseo.mol3}}$
+- $\color{purple}{\text{huskd}}$
+- $\color{purple}{\text{rartsofficial}}$
+- $\color{purple}{\text{.kromer  }}$
+- $\color{purple}{\text{stareatswag}}$
+- $\color{purple}{\text{imjayden n}}$
+- $\color{purple}{\text{doodslr}}$
+- $\color{purple}{\text{therealgolden / therealgoldenalt}}$
+- $\color{purple}{\text{humor0ous }}$
+- $\color{purple}{\text{keboii69}}$
+- $\color{purple}{\text{vp yzy}}$
+- $\color{purple}{\text{12.nyx.83}}$
+- $\color{purple}{\text{ilikechowchows}}$
 
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-    INFO AND LINKS
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-
-If you wanna dig around, the game is fully open source on Github
-https://github.com/ninjamuffin99/Funkin
-
-It's made in Haxe / HaxeFlixel
-
-MUSIC IS ON SPOTIFY AND BANDCAMP AND EVERYWHERE ELSE PROB TOO
-https://kawaisprite.bandcamp.com/album/friday-night-funkin-ost-vol-1
-
-
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-    FINAL WORDS / CREDITS
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-
-Friday Night Funkin' is made by ninjamuffin99 (programmer), PhantomArcade (animator), kawaisprite (musician), and evilsk8r (artist)
-
-https://twitter.com/ninja_muffin99
-https://twitter.com/phantomarcade3k
-https://twitter.com/kawaisprite
-https://twitter.com/evilsk8r
-
-Pico is created by Tom Fulp
-Skid and Pump are created by SrPelo
-BassetFilms did music for lemon monster songs
-
-
-Final important thing, this is made with the support and love to and from Newgrounds.com.
-Go to newgrounds, we love newgrounds. newgrounds good. How many times do I gotta damn say it. Newgrounds newgrounds newgrounds newgrounds
-I love Tom Fulp.
-
-- Cameron ♪(´▽｀)
-
-##################################################################################
-                                                                                  
- _   _   _____   _      _    ____   ____     ___    _   _   _   _   ____    ____  
-| \ | | | ____| | |    | |  / ___| |  _ \   / _ \  | | | | | \ | | |  _ \  / ___| 
-|  \| | |  _|   | | /\ | | | |  _  | |_) | | | | | | | | | |  \| | | | | | \___ \ 
-| |\  | | |___   \ V  V /  | |_| | |  _ <  | |_| | | |_| | | |\  | | |_| |  ___) |
-|_| \_| |_____|   \_/\_/    \____| |_| \_\  \___/   \___/  |_| \_| |____/  |____/ 
- _       _  _     ___    ___       __              _       _  _       _        _  
-|_ |  | |_ |_) \_/ | |_|  |  |\ | /__     |_      |_ |  | |_ |_) \_/ / \ |\ | |_  
-|_  \/  |_ | \  |  | | | _|_ | \| \_| o   |_)\/   |_  \/  |_ | \  |  \_/ | \| |_ o
-                                      /      /                                    
-                                                                                  
-##################################################################################
-i stole this from stamper.
+![e](https://github.com/mcmattyobriore/empty/blob/main/readme/preview-5.png)
