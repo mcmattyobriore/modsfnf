@@ -5,12 +5,47 @@
 <title>Mods Select</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!-- Favicon -->
+<link rel="icon" type="image/png"
+  href="https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/favicons/Untitled132_20260210032952.png">
+
 <style>
   body {
     margin: 0;
-    background: #fff;
+    background: url("https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/backgrounds/Untitled130_20260210032133.png")
+      no-repeat center center fixed;
+    background-size: cover;
     font-family: Impact, "Arial Black", sans-serif;
     overflow: hidden;
+  }
+
+  /* White flash overlay */
+  .flash {
+    position: fixed;
+    inset: 0;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+    z-index: 999;
+  }
+
+  .flash.active {
+    opacity: 1;
+  }
+
+  /* Top centered title image */
+  .title {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  .title img {
+    max-width: 520px;
+    width: 90vw;
   }
 
   .menu {
@@ -45,19 +80,37 @@
     box-shadow: 0 0 18px rgba(0,0,0,0.45);
   }
 
+  /* Select / Confirm image */
   .hint {
     position: absolute;
     right: 40px;
     bottom: 40px;
-    font-family: monospace;
-    font-size: 26px;
+  }
+
+  .hint img {
+    width: 260px;
+    image-rendering: pixelated;
   }
 </style>
 </head>
 <body>
 
+<div class="flash" id="flash"></div>
+
+<!-- Top title image -->
+<div class="title">
+  <img src="https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/text/Untitled131_20260210032429.png"
+       alt="Mods Select">
+</div>
+
 <div class="menu" id="menu"></div>
-<div class="hint">↑ ↓ select • ENTER confirm</div>
+
+<!-- Select / Confirm image -->
+<div class="hint">
+  <img id="selectImage"
+    src="https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/select/Untitled131_20260210041932.png"
+    alt="Select">
+</div>
 
 <script>
 const folders = [
@@ -72,17 +125,25 @@ const folders = [
 ];
 
 const menu = document.getElementById("menu");
-let selectedIndex = 0;
+const flash = document.getElementById("flash");
+const selectImage = document.getElementById("selectImage");
 
-// how many items visible (FNF-like window)
-const visibleCount = 5;
+const selectImg =
+  "https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/select/Untitled131_20260210041932.png";
+
+const confirmImgs = [
+  "https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/confirmed/Untitled131_20260210042131.png",
+  "https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/confirmed/Untitled131_20260210042135.png"
+];
+
+let selectedIndex = 0;
+let confirming = false;
 
 function render() {
   menu.innerHTML = "";
 
   for (let i = -2; i <= 2; i++) {
-    let index = (selectedIndex + i + folders.length) % folders.length;
-
+    const index = (selectedIndex + i + folders.length) % folders.length;
     const div = document.createElement("div");
     div.className = "item" + (i === 0 ? " selected" : "");
     div.innerHTML = `<span>${folders[index]}</span>`;
@@ -91,23 +152,44 @@ function render() {
 }
 
 function moveSelection(dir) {
+  if (confirming) return;
   selectedIndex = (selectedIndex + dir + folders.length) % folders.length;
   render();
 }
 
 function confirmSelection() {
-  const name = folders[selectedIndex];
-  window.location.href = `https://mcmattyobriore.github.io./modsfnf/${name}/`;
+  if (confirming) return;
+  confirming = true;
+
+  // white flash
+  flash.classList.add("active");
+  setTimeout(() => flash.classList.remove("active"), 120);
+
+  // image flicker
+  let i = 0;
+  const flicker = setInterval(() => {
+    selectImage.src = confirmImgs[i % 2];
+    i++;
+  }, 80);
+
+  setTimeout(() => {
+    clearInterval(flicker);
+    selectImage.src = selectImg;
+
+    const name = folders[selectedIndex];
+    window.open(
+      `https://mcmattyobriore.github.io./modsfnf/${name}/`,
+      "_blank"
+    );
+
+    confirming = false;
+  }, 500);
 }
 
 document.addEventListener("keydown", e => {
-  if (e.key === "ArrowDown") {
-    moveSelection(1);
-  } else if (e.key === "ArrowUp") {
-    moveSelection(-1);
-  } else if (e.key === "Enter") {
-    confirmSelection();
-  }
+  if (e.key === "ArrowDown") moveSelection(1);
+  if (e.key === "ArrowUp") moveSelection(-1);
+  if (e.key === "Enter") confirmSelection();
 });
 
 render();
