@@ -37,10 +37,16 @@
   /* Top centered title image */
   .title {
     position: absolute;
-    top: 24px;
+    top: -36px;
     left: 50%;
     transform: translateX(-50%);
-    pointer-events: none;
+    pointer-events: auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+
+  .title:hover {
+    transform: translateX(-50%) scale(1.1);
   }
 
   .title img {
@@ -48,11 +54,58 @@
     width: 90vw;
   }
 
+  /* Tabs */
+  .tabs {
+    position: absolute;
+    left: 20px;
+    top: 105px;
+    display: flex;
+    gap: 12px;
+    z-index: 3;
+  }
+
+  .tab {
+    padding: 12px 24px;
+    background: #000;
+    color: #666;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: skewX(-12deg);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tab span {
+    transform: skewX(12deg);
+  }
+
+  .tab:hover {
+    background: #1a1a1a;
+    border-color: #555;
+  }
+
+  .tab.active {
+    background: #f1d400;
+    color: #000;
+    border-color: #f1d400;
+    box-shadow: 0 0 12px rgba(241, 212, 0, 0.4);
+  }
+
+  .tab .icon {
+    font-size: 18px;
+    transform: skewX(12deg);
+  }
+
   .menu {
     position: absolute;
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 2;
   }
 
   .item {
@@ -65,6 +118,7 @@
     text-transform: uppercase;
     transform: skewX(-12deg);
     transition: all 0.15s ease;
+    position: relative;
   }
 
   .item span {
@@ -80,15 +134,146 @@
     box-shadow: 0 0 18px rgba(0,0,0,0.45);
   }
 
+  .item.non-selectable {
+    background: #4a4000;
+    color: #666;
+    opacity: 0.6;
+  }
+
+  .item.non-selectable.selected {
+    background: #6b5f00;
+    color: #888;
+  }
+
+  /* Status icons */
+  .status-icons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) skewX(12deg);
+    display: flex;
+    gap: 8px;
+  }
+
+  .status-icon {
+    font-size: 20px;
+    opacity: 0.3;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .status-icon:hover {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+
+  .status-icon.active {
+    opacity: 1;
+  }
+
+  .status-icon.favorite.active {
+    color: #f1d400;
+    text-shadow: 0 0 8px rgba(241, 212, 0, 0.6);
+  }
+
+  /* Cyan/blue favorite on selected item */
+  .item.selected .status-icon.favorite.active {
+    color: #00d4ff;
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+  }
+
+  .status-icon.enjoyed.active {
+    color: #ff3366;
+    text-shadow: 0 0 8px rgba(255, 51, 102, 0.6);
+  }
+
+  /* Mod description */
+  .description {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    max-width: 420px;
+    padding: 16px 20px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+    border-left: 4px solid #f1d400;
+    font-family: Arial, sans-serif;
+    z-index: 2;
+  }
+
+  /* Cover art */
+  .cover-container {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    background: #000;
+    overflow: hidden;
+  }
+
+  .cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
   /* Select / Confirm image */
   .hint {
     position: absolute;
     right: 40px;
     bottom: 40px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    z-index: 3;
+  }
+
+  .hint:hover {
+    transform: scale(1.05);
+  }
+
+  .hint:active {
+    transform: scale(0.95);
+  }
+
+  .hint.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .hint.disabled:hover {
+    transform: none;
   }
 
   .hint img {
     width: 260px;
+    image-rendering: pixelated;
+  }
+  
+  .soundBg {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    z-index: 3;
+  }
+  
+  .soundBg:hover {
+    transform: scale(1.1);
+  }
+  
+  .soundBg:active {
+    transform: scale(0.95);
+  }
+  
+  .soundBg img {
+    width: 96px;
     image-rendering: pixelated;
   }
 </style>
@@ -98,19 +283,55 @@
 <div class="flash" id="flash"></div>
 
 <!-- Top title image -->
-<div class="title">
+<div class="title" id="titleImage">
   <img src="https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/text/Untitled131_20260210032429.png"
        alt="Mods Select">
 </div>
 
+<!-- Tabs -->
+<div class="tabs">
+  <div class="tab active" data-tab="all">
+    <span>All</span>
+  </div>
+  <div class="tab" data-tab="favorites">
+    <span class="icon">★</span>
+    <span>Favorites</span>
+  </div>
+  <div class="tab" data-tab="enjoyed">
+    <span class="icon">♥</span>
+    <span>Enjoyed</span>
+  </div>
+</div>
+
 <div class="menu" id="menu"></div>
 
+<!-- Mod description -->
+<div class="description" id="description"></div>
+
+<!-- Cover art -->
+<div class="cover-container">
+  <img id="coverArt" src="" alt="Mod Cover Art">
+</div>
+
 <!-- Select / Confirm image -->
-<div class="hint">
+<div class="hint" id="selectButton">
   <img id="selectImage"
     src="https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/select/Untitled131_20260210041932.png"
     alt="Select">
 </div>
+
+<!-- sound / mute icon -->
+<div class="soundBg" id="soundToggle">
+  <img id="soundIcon"
+    src="https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/sound-icon/Untitled133_20260210043405.png"
+    alt="background sound on off">
+</div>
+
+<!-- Background music audio element -->
+<audio id="bgMusic" loop>
+  <source src="../system/bgmusic/menu-music.mp3" type="audio/mpeg">
+  <source src="../system/bgmusic/menu-music.ogg" type="audio/ogg">
+</audio>
 
 <script>
 const folders = [
@@ -121,12 +342,111 @@ const folders = [
   "nonacceptance","noob","pibby2","pokemon","porifera","qt","redux",
   "roadblocks","rottensmoothie","sky","skyreborn","sonicdashandspin",
   "spooky","spookyboo","supxr","tabi","tailstroll","tetonic","tweakmas",
-  "ubume","unfinished","updog","wip","wipomg","yokai"
+  "ubume","unfinished","updog","wip","wipomg","yokai", "the-college-dropout"
 ];
+
+// Mod metadata (for HTML creation - not user editable)
+const modMetadata = {
+  "wip": { show: true, selectable: true },
+  "wipomg": { show: true, selectable: true },
+  "unfinished": { show: true, selectable: true },
+  "updog": { show: true, selectable: true },
+  "the-college-dropout": { show: true, selectable: false },
+  // All others default to: { show: true, selectable: true }
+};
+
+// User preferences (stored in localStorage)
+let userPreferences = {
+  favorites: [],
+  enjoyed: [],
+  currentTab: "all"
+};
+
+// Load preferences from localStorage
+function loadPreferences() {
+  const saved = localStorage.getItem('fnfModsPreferences');
+  if (saved) {
+    userPreferences = { ...userPreferences, ...JSON.parse(saved) };
+  }
+}
+
+// Save preferences to localStorage
+function savePreferences() {
+  localStorage.setItem('fnfModsPreferences', JSON.stringify(userPreferences));
+}
+
+// Mod descriptions
+const modDescriptions = {
+  "akage": "descriptions will appear here!",
+  "anemaniac": "descriptions will appear here!",
+  "atrocity": "descriptions will appear here!",
+  "blueball": "descriptions will appear here!",
+  "bocchi": "descriptions will appear here!",
+  "bsidere": "descriptions will appear here!",
+  "chev": "descriptions will appear here!",
+  "cityfunk": "descriptions will appear here!",
+  "cnlost": "descriptions will appear here!",
+  "corrosion": "descriptions will appear here!",
+  "darkwing": "descriptions will appear here!",
+  "digging": "descriptions will appear here!",
+  "docad": "descriptions will appear here!",
+  "earlywhor": "descriptions will appear here!",
+  "fancy": "descriptions will appear here!",
+  "femtanyl": "descriptions will appear here!",
+  "funkinheights": "descriptions will appear here!",
+  "gem": "descriptions will appear here!",
+  "gfmix": "descriptions will appear here!",
+  "gummi": "descriptions will appear here!",
+  "hits": "descriptions will appear here!",
+  "iirida": "descriptions will appear here!",
+  "kick": "descriptions will appear here!",
+  "legacy": "descriptions will appear here!",
+  "licorice": "descriptions will appear here!",
+  "lobotomy": "descriptions will appear here!",
+  "mcm": "descriptions will appear here!",
+  "miku": "descriptions will appear here!",
+  "mouse-rookies": "descriptions will appear here!",
+  "nonacceptance": "descriptions will appear here!",
+  "noob": "descriptions will appear here!",
+  "pibby2": "descriptions will appear here!",
+  "pokemon": "descriptions will appear here!",
+  "porifera": "descriptions will appear here!",
+  "qt": "descriptions will appear here!",
+  "redux": "descriptions will appear here!",
+  "roadblocks": "descriptions will appear here!",
+  "rottensmoothie": "descriptions will appear here!",
+  "sky": "descriptions will appear here!",
+  "skyreborn": "descriptions will appear here!",
+  "sonicdashandspin": "descriptions will appear here!",
+  "spooky": "descriptions will appear here!",
+  "spookyboo": "descriptions will appear here!",
+  "supxr": "descriptions will appear here!",
+  "tabi": "descriptions will appear here!",
+  "tailstroll": "descriptions will appear here!",
+  "tetonic": "descriptions will appear here!",
+  "tweakmas": "descriptions will appear here!",
+  "ubume": "descriptions will appear here!",
+  "unfinished": "descriptions will appear here!",
+  "updog": "descriptions will appear here!",
+  "wip": "descriptions will appear here!",
+  "wipomg": "descriptions will appear here!",
+  "yokai": "descriptions will appear here!",
+  "the-college-dropout": "descriptions will appear here!"
+};
 
 const menu = document.getElementById("menu");
 const flash = document.getElementById("flash");
 const selectImage = document.getElementById("selectImage");
+const selectButton = document.getElementById("selectButton");
+const soundToggle = document.getElementById("soundToggle");
+const soundIcon = document.getElementById("soundIcon");
+const bgMusic = document.getElementById("bgMusic");
+const descriptionEl = document.getElementById("description");
+const coverArt = document.getElementById("coverArt");
+const titleImage = document.getElementById("titleImage");
+
+// Background music path
+const bgMusicPath = "../system/bgmusic/menu-music";
 
 const selectImg =
   "https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/select/Untitled131_20260210041932.png";
@@ -136,29 +456,299 @@ const confirmImgs = [
   "https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/confirmed/Untitled131_20260210042135.png"
 ];
 
+const soundOnImg = 
+  "https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/sound-icon/Untitled133_20260210043405.png";
+const soundOffImg = 
+  "https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/sound-icon/Untitled133_20260210043456.png";
+
 let selectedIndex = 0;
 let confirming = false;
+let isMuted = true;
+let currentTab = "all";
+let filteredFolders = [];
 
-function render() {
-  menu.innerHTML = "";
+// Get metadata for a mod
+function getMetadata(modName) {
+  return modMetadata[modName] || { show: true, selectable: true };
+}
 
-  for (let i = -2; i <= 2; i++) {
-    const index = (selectedIndex + i + folders.length) % folders.length;
-    const div = document.createElement("div");
-    div.className = "item" + (i === 0 ? " selected" : "");
-    div.innerHTML = `<span>${folders[index]}</span>`;
-    menu.appendChild(div);
+// Filter folders based on current tab
+function filterFolders() {
+  let filtered = folders.filter(mod => {
+    const meta = getMetadata(mod);
+    if (!meta.show) return false;
+    
+    if (currentTab === "favorites") {
+      return userPreferences.favorites.includes(mod);
+    } else if (currentTab === "enjoyed") {
+      return userPreferences.enjoyed.includes(mod);
+    }
+    return true; // "all" tab
+  });
+  
+  filteredFolders = filtered;
+  
+  // Reset selection if current index is out of bounds
+  if (selectedIndex >= filteredFolders.length) {
+    selectedIndex = Math.max(0, filteredFolders.length - 1);
   }
 }
 
+function updateDescription() {
+  if (filteredFolders.length === 0) {
+    descriptionEl.textContent = "No mods in this category.";
+    return;
+  }
+  const currentMod = filteredFolders[selectedIndex];
+  descriptionEl.textContent = modDescriptions[currentMod] || "No description available.";
+}
+
+function updateCoverArt() {
+  if (filteredFolders.length === 0) {
+    coverArt.src = "";
+    coverArt.style.backgroundColor = "";
+    coverArt.alt = "";
+    return;
+  }
+
+  const currentMod = filteredFolders[selectedIndex];
+
+  // reset styles
+  coverArt.style.backgroundColor = "";
+  coverArt.style.objectFit = "";
+  coverArt.alt = "";
+
+  // try PNG first
+  coverArt.src = `../system/cover-art/${currentMod}.png`;
+
+  coverArt.onerror = function () {
+    // try JPG next
+    this.onerror = function () {
+      // final fallback: not found
+      this.onerror = null;
+      this.src = "../system/error/cover/notFound.png";
+
+      // style fallback state
+      this.style.backgroundColor = "white";
+      this.style.objectFit = "contain";
+      this.alt = "covers here";
+    };
+
+    this.src = `../system/cover-art/${currentMod}.jpg`;
+  };
+}
+
+function updateSelectButton() {
+  if (filteredFolders.length === 0) {
+    selectButton.classList.add('disabled');
+    return;
+  }
+  
+  const currentMod = filteredFolders[selectedIndex];
+  const meta = getMetadata(currentMod);
+  
+  if (meta.selectable) {
+    selectButton.classList.remove('disabled');
+  } else {
+    selectButton.classList.add('disabled');
+  }
+}
+
+function toggleFavorite(modName) {
+  const index = userPreferences.favorites.indexOf(modName);
+  
+  if (index > -1) {
+    userPreferences.favorites.splice(index, 1);
+  } else {
+    userPreferences.favorites.push(modName);
+  }
+  
+  savePreferences();
+  
+  // Re-filter if we're in favorites tab
+  if (currentTab === "favorites") {
+    const wasSelected = filteredFolders[selectedIndex] === modName;
+    filterFolders();
+    
+    // Adjust selection if needed
+    if (wasSelected && filteredFolders.length > 0) {
+      selectedIndex = Math.min(selectedIndex, filteredFolders.length - 1);
+    }
+  }
+  
+  render();
+}
+
+function toggleEnjoyed(modName) {
+  const index = userPreferences.enjoyed.indexOf(modName);
+  
+  if (index > -1) {
+    userPreferences.enjoyed.splice(index, 1);
+  } else {
+    userPreferences.enjoyed.push(modName);
+  }
+  
+  savePreferences();
+  
+  // Re-filter if we're in enjoyed tab
+  if (currentTab === "enjoyed") {
+    const wasSelected = filteredFolders[selectedIndex] === modName;
+    filterFolders();
+    
+    // Adjust selection if needed
+    if (wasSelected && filteredFolders.length > 0) {
+      selectedIndex = Math.min(selectedIndex, filteredFolders.length - 1);
+    }
+  }
+  
+  render();
+}
+
+function render() {
+  menu.innerHTML = "";
+  
+  if (filteredFolders.length === 0) {
+    const div = document.createElement("div");
+    div.className = "item";
+    div.innerHTML = `<span>No mods available</span>`;
+    menu.appendChild(div);
+    updateDescription();
+    updateCoverArt();
+    updateSelectButton();
+    return;
+  }
+
+  // If 5 or fewer items, show all without wrapping
+  if (filteredFolders.length <= 5) {
+    filteredFolders.forEach((modName, idx) => {
+      const meta = getMetadata(modName);
+      
+      const div = document.createElement("div");
+      div.className = "item" + (idx === selectedIndex ? " selected" : "");
+      
+      if (!meta.selectable) {
+        div.className += " non-selectable";
+      }
+      
+      div.innerHTML = `<span>${modName}</span>`;
+      
+      // Add status icons - always show both
+      const statusIcons = document.createElement("div");
+      statusIcons.className = "status-icons";
+      
+      const isFavorite = userPreferences.favorites.includes(modName);
+      const isEnjoyed = userPreferences.enjoyed.includes(modName);
+      
+      const favIcon = document.createElement("span");
+      favIcon.className = "status-icon favorite" + (isFavorite ? " active" : "");
+      favIcon.textContent = "★";
+      favIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleFavorite(modName);
+      });
+      
+      const enjoyIcon = document.createElement("span");
+      enjoyIcon.className = "status-icon enjoyed" + (isEnjoyed ? " active" : "");
+      enjoyIcon.textContent = "♥";
+      enjoyIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleEnjoyed(modName);
+      });
+      
+      statusIcons.appendChild(favIcon);
+      statusIcons.appendChild(enjoyIcon);
+      div.appendChild(statusIcons);
+      
+      menu.appendChild(div);
+    });
+  } else {
+    // More than 5 items - use wrapping carousel view
+    for (let i = -2; i <= 2; i++) {
+      const index = (selectedIndex + i + filteredFolders.length) % filteredFolders.length;
+      const modName = filteredFolders[index];
+      const meta = getMetadata(modName);
+      
+      const div = document.createElement("div");
+      div.className = "item" + (i === 0 ? " selected" : "");
+      
+      if (!meta.selectable) {
+        div.className += " non-selectable";
+      }
+      
+      div.innerHTML = `<span>${modName}</span>`;
+      
+      // Add status icons - always show both
+      const statusIcons = document.createElement("div");
+      statusIcons.className = "status-icons";
+      
+      const isFavorite = userPreferences.favorites.includes(modName);
+      const isEnjoyed = userPreferences.enjoyed.includes(modName);
+      
+      const favIcon = document.createElement("span");
+      favIcon.className = "status-icon favorite" + (isFavorite ? " active" : "");
+      favIcon.textContent = "★";
+      favIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleFavorite(modName);
+      });
+      
+      const enjoyIcon = document.createElement("span");
+      enjoyIcon.className = "status-icon enjoyed" + (isEnjoyed ? " active" : "");
+      enjoyIcon.textContent = "♥";
+      enjoyIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleEnjoyed(modName);
+      });
+      
+      statusIcons.appendChild(favIcon);
+      statusIcons.appendChild(enjoyIcon);
+      div.appendChild(statusIcons);
+      
+      menu.appendChild(div);
+    }
+  }
+  
+  updateDescription();
+  updateCoverArt();
+  updateSelectButton();
+}
+
 function moveSelection(dir) {
-  if (confirming) return;
-  selectedIndex = (selectedIndex + dir + folders.length) % folders.length;
+  if (confirming || filteredFolders.length === 0) return;
+  selectedIndex = (selectedIndex + dir + filteredFolders.length) % filteredFolders.length;
+  render();
+}
+
+function switchTab(direction) {
+  const tabs = ["all", "favorites", "enjoyed"];
+  let currentIndex = tabs.indexOf(currentTab);
+  currentIndex = (currentIndex + direction + tabs.length) % tabs.length;
+  currentTab = tabs[currentIndex];
+  
+  userPreferences.currentTab = currentTab;
+  savePreferences();
+  
+  // Update tab UI
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.classList.remove('active');
+    if (tab.dataset.tab === currentTab) {
+      tab.classList.add('active');
+    }
+  });
+  
+  filterFolders();
+  selectedIndex = 0;
   render();
 }
 
 function confirmSelection() {
-  if (confirming) return;
+  if (confirming || filteredFolders.length === 0) return;
+  
+  const currentMod = filteredFolders[selectedIndex];
+  const meta = getMetadata(currentMod);
+  
+  if (!meta.selectable) return;
+  
   confirming = true;
 
   // white flash
@@ -176,9 +766,8 @@ function confirmSelection() {
     clearInterval(flicker);
     selectImage.src = selectImg;
 
-    const name = folders[selectedIndex];
     window.open(
-      `https://mcmattyobriore.github.io./modsfnf/${name}/`,
+      `https://mcmattyobriore.github.io./modsfnf/${currentMod}/`,
       "_blank"
     );
 
@@ -186,12 +775,66 @@ function confirmSelection() {
   }, 500);
 }
 
-document.addEventListener("keydown", e => {
-  if (e.key === "ArrowDown") moveSelection(1);
-  if (e.key === "ArrowUp") moveSelection(-1);
-  if (e.key === "Enter") confirmSelection();
+function toggleSound() {
+  isMuted = !isMuted;
+  
+  if (isMuted) {
+    bgMusic.pause();
+    soundIcon.src = soundOffImg;
+  } else {
+    bgMusic.play().catch(err => {
+      console.log("Audio playback failed:", err);
+      isMuted = true;
+      soundIcon.src = soundOffImg;
+    });
+    soundIcon.src = soundOnImg;
+  }
+}
+
+// Sound toggle click event
+soundToggle.addEventListener("click", toggleSound);
+
+// Select button click event
+selectButton.addEventListener("click", confirmSelection);
+
+// Tab click events
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    currentTab = tab.dataset.tab;
+    userPreferences.currentTab = currentTab;
+    savePreferences();
+    
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    
+    filterFolders();
+    selectedIndex = 0;
+    render();
+  });
 });
 
+document.addEventListener("keydown", e => {
+  // Navigation
+  if (e.key === "ArrowDown" || e.key === "s" || e.key === "S") moveSelection(1);
+  if (e.key === "ArrowUp" || e.key === "w" || e.key === "W") moveSelection(-1);
+  
+  // Tab switching
+  if (e.key === "ArrowLeft" || e.key === "a" || e.key === "A") switchTab(-1);
+  if (e.key === "ArrowRight" || e.key === "d" || e.key === "D") switchTab(1);
+  
+  // Confirm
+  if (e.key === "Enter") confirmSelection();
+  
+  // Toggle music
+  if (e.key === "m" || e.key === "M") toggleSound();
+});
+
+// Initialize
+loadPreferences();
+currentTab = userPreferences.currentTab || "all";
+document.querySelector(`[data-tab="${currentTab}"]`).classList.add('active');
+soundIcon.src = soundOffImg;
+filterFolders();
 render();
 </script>
 
