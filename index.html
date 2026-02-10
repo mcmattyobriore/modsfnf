@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Mods Select</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --inactive: #111;
+    --active-red: #e10600;
+    --active-yellow: #f1d400;
+    --active-green: #25ff00;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    font-family: "Arial Black", Impact, sans-serif;
+    overflow: hidden;
+  }
+
+  .container {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 20px;
+  }
+
+  .item {
+    position: relative;
+    width: 320px;
+    margin: 12px 0;
+    padding: 18px 28px;
+    color: black;
+    font-size: 26px;
+    text-transform: uppercase;
+    background: #000;
+    transform: skewX(-12deg);
+    transition: all 0.18s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .item span {
+    display: block;
+    transform: skewX(12deg);
+  }
+
+  .item.inactive {
+    background: #000;
+    color: #999;
+  }
+
+  .item.active {
+    width: 380px;
+    font-size: 30px;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+
+  .item.red { background: var(--active-red); }
+  .item.yellow { background: var(--active-yellow); }
+  .item.green { background: var(--active-green); }
+
+  .hint {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    font-size: 28px;
+    font-family: monospace;
+  }
+</style>
+</head>
+<body>
+
+<div class="container" id="menu"></div>
+<div class="hint">↑ ↓ select &nbsp; • &nbsp; ENTER confirm</div>
+
+<script>
+const folders = [
+  "akage","anemaniac","atrocity","blueball","bocchi","bsidere","chev",
+  "cityfunk","cnlost","corrosion","darkwing","digging","docad","earlywhor",
+  "fancy","femtanyl","funkinheights","gem","gfmix","gummi","hits","iirida",
+  "kick","legacy","licorice","lobotomy","mcm","miku","mouse-rookies",
+  "nonacceptance","noob","pibby2","pokemon","porifera","qt","redux",
+  "roadblocks","rottensmoothie","sky","skyreborn","sonicdashandspin",
+  "spooky","spookyboo","supxr","tabi","tailstroll","tetonic","tweakmas",
+  "ubume","unfinished","updog","wip","wipomg","yokai"
+];
+
+const menu = document.getElementById("menu");
+let selected = 0;
+
+function colorFor(index) {
+  if (index % 3 === 0) return "red";
+  if (index % 3 === 1) return "yellow";
+  return "green";
+}
+
+function render() {
+  menu.innerHTML = "";
+  folders.forEach((name, i) => {
+    const div = document.createElement("div");
+    div.className = "item " + (i === selected ? "active " + colorFor(i) : "inactive");
+    div.innerHTML = `<span>${name}</span>`;
+    div.onclick = () => openLink(name);
+    menu.appendChild(div);
+  });
+}
+
+function openLink(name) {
+  window.location.href = `https://mcmattyobriore/modsfnf/${name}/`;
+}
+
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowDown") {
+    selected = (selected + 1) % folders.length;
+    render();
+  }
+  if (e.key === "ArrowUp") {
+    selected = (selected - 1 + folders.length) % folders.length;
+    render();
+  }
+  if (e.key === "Enter") {
+    openLink(folders[selected]);
+  }
+});
+
+render();
+</script>
+
+</body>
+</html>
