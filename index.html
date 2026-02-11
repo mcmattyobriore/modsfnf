@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Mods Select</title>
+<title>FNF MODULARY</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Favicon -->
@@ -431,7 +431,7 @@ const modDescriptions = {
   "wip": "descriptions will appear here!",
   "wipomg": "descriptions will appear here!",
   "yokai": "descriptions will appear here!",
-  "the-college-dropout": "descriptions will appear here!"
+  "the-college-dropout": "Friday Night Funkin Vs The Fricking Dropout, created by ant. Ported by Rhap5ody, credits YNF TEAM & YZY MOB."
 };
 
 const menu = document.getElementById("menu");
@@ -507,6 +507,7 @@ function updateCoverArt() {
   if (filteredFolders.length === 0) {
     coverArt.src = "";
     coverArt.style.backgroundColor = "";
+    coverArt.style.objectFit = "";
     coverArt.alt = "";
     return;
   }
@@ -515,27 +516,23 @@ function updateCoverArt() {
 
   // reset styles
   coverArt.style.backgroundColor = "";
-  coverArt.style.objectFit = "";
-  coverArt.alt = "";
+  coverArt.style.objectFit = "cover";
+  coverArt.alt = `${currentMod} cover art`;
 
-  // try PNG first
-  coverArt.src = `../system/cover-art/${currentMod}.png`;
-
+  // GitHub raw base path (folder-name).PNG
   coverArt.onerror = function () {
-    // try JPG next
-    this.onerror = function () {
-      // final fallback: not found
-      this.onerror = null;
-      this.src = "../system/error/cover-art/notFound.png";
+    this.onerror = null;
+    this.src =
+      "https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/error/cover-art/Untitled134_20260210185748.png";
 
-      // style fallback state
-      this.style.backgroundColor = "white";
-      this.style.objectFit = "contain";
-      this.alt = "covers here";
-    };
-
-    this.src = `../system/cover-art/${currentMod}.jpg`;
+    // fallback styling
+    this.style.backgroundColor = "white";
+    this.style.objectFit = "contain";
+    this.alt = "cover not found";
   };
+
+  coverArt.src =
+    `https://raw.githubusercontent.com/mcmattyobriore/modsfnf/main/system/cover-art/${currentMod}.png`;
 }
 
 function updateSelectButton() {
